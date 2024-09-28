@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/planetsListFragment"
+        android:icon="@drawable/planet_list_icon"
+        android:title="Planets List" />
+    <item
+        android:id="@+id/addPlanetFragment"
+        android:icon="@drawable/planet_add_icon"
+        android:title="Add Planet" />
+    <item
+        android:id="@+id/selectPlanetToUpdateFragment"
+        android:icon="@drawable/planet_update_icon"
+        android:title="Update Planet" />
+
+    <item
+        android:id="@+id/selectPlanetToDeleteFragment"
+        android:icon="@drawable/planet_delete_icon"
+        android:title="Delete Planet" />
+</menu>
+

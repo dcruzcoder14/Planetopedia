@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Planetopedia DB App</string>
+
+    <string name="planet_image">Planet Image</string>
+
+    <string name="add_planet">Add Planet</string>
+
+    <string-array name="planet_images">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

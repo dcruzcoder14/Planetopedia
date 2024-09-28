@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/planetsListFragment">
+
+    <fragment
+        android:id="@+id/planetsListFragment"
+        android:name="com.example.planetopedia.PlanetsListFragment"
+        android:label="Planets List"
+        tools:layout="@layout/fragment_planets_list">
+        <action
+            android:id="@+id/action_planetsListFragment_to_addPlanetFragment"
+            app:destination="@id/addPlanetFragment" />
+        <action
+            android:id="@+id/action_planetsListFragment_to_updatePlanetFragment"
+            app:destination="@id/updatePlanetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addPlanetFragment"
+        android:name="com.example.planetopedia.AddPlanetFragment"
+        android:label="Add Planet"
+        tools:layout="@layout/fragment_add_planet">
+        <action
+            android:id="@+id/action_addPlanetFragment_to_planetsListFragment"
+            app:destination="@id/planetsListFragment"
+            app:popUpTo="@id/planetsListFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/updatePlanetFragment"
+        android:name="com.example.planetopedia.UpdatePlanetFragment"
+        android:label="Update Planet"
+        tools:layout="@layout/fragment_update_planet">
+        <argument
+            android:name="planet"
+            app:argType="com.example.planetopedia.Planet"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_updatePlanetFragment_to_planetsListFragment"
+            app:destination="@id/planetsListFragment"
+            app:popUpTo="@id/planetsListFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectPlanetToUpdateFragment"
+        android:name="com.example.planetopedia.SelectPlanetToUpdateFragment"
+        android:label="Select Planet to Update"
+        tools:layout="@layout/fragment_select_planet_to_update">
+        <action
+            android:id="@+id/action_selectPlanetToUpdateFragment_to_updatePlanetFragment"
+            app:destination="@id/updatePlanetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectPlanetToDeleteFragment"
+        android:name="com.example.planetopedia.SelectPlanetToDeleteFragment"
+        android:label="Select Planet to Delete"
+        tools:layout="@layout/fragment_select_planet_to_delete">
+        <action
+            android:id="@+id/action_selectPlanetToDeleteFragment_to_deletePlanetFragment"
+            app:destination="@id/deletePlanetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deletePlanetFragment"
+        android:name="com.example.planetopedia.DeletePlanetFragment"
+        android:label="Delete Planet"
+        tools:layout="@layout/fragment_delete_planet">
+        <argument
+            android:name="planet"
+            app:argType="com.example.planetopedia.Planet"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_deletePlanetFragment_to_planetsListFragment"
+            app:destination="@id/planetsListFragment"
+            app:popUpTo="@id/planetsListFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>
