@@ -5,6 +5,7 @@
 </p>
 
 <br><p align="center">
-  <img width="287" alt="Screenshot 2024-09-27 214159" src="https://github.com/user-attachments/assets/b2c772e1-6b25-4a6a-8bad-e74696eebabc">
+  <img width="280" alt="Screenshot 2024-09-27 214159" src="https://github.com/user-attachments/assets/3dad4799-2876-4a0b-9f98-24af05b19299">
 </p><br>
+
 
