@@ -5,5 +5,6 @@
 </p>
 
 <br><p align="center">
-  <img width="278" alt="Screenshot 2024-09-27 214159" src="https://github.com/user-attachments/assets/73ef7afd-5f15-4f23-9475-dd70b0063a02">
+  <img width="287" alt="Screenshot 2024-09-27 214159" src="https://github.com/user-attachments/assets/b2c772e1-6b25-4a6a-8bad-e74696eebabc">
 </p><br>
+
